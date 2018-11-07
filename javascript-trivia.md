@@ -66,4 +66,43 @@
 
 ## 10. how would you implement `getElementsByAttribute`?
 
-  - 
+  ``` javascript
+    function getElementsByAttribute(attr) {
+        const all = document.querySelectorAll('*');
+        const found = []
+
+        all.forEach(node => {
+            if (node.getAttribute(attr)) {
+                found.push(node)
+            }
+        })
+
+        return found;
+    }
+
+    // -> returns an array of all the links on a page
+    getElementsByAttribute('href') 
+  ```
+
+  ## 11. how would you add a class to an element by query selector?
+  
+  ``` javascript
+    function addClass(selector, className) {
+        const el = document.querySelector(selector)
+
+        if (el) {
+            el.classList.add(className);
+        }
+    }
+
+    // -> changed post title to be styled like the site title 
+    addClass('.post-title', 'site-title')
+  ```
+
+  ## 12. how could i verify if one element is a child of another?
+
+  ``` javascript
+    function isDescendant(parent, child) {
+
+    }
+  ```

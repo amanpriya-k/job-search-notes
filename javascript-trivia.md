@@ -27,7 +27,7 @@
   - type of undefined = “undefined” 
     - could be unintentional
 
-## 5. value of ‘this’ inside setTimeout?
+## 5. value of `this` inside setTimeout?
   - window, unless function is bound
 
 ## 6. does js pass parameter by value or reference?
@@ -58,3 +58,12 @@
   - universal(`*`)
   - attribute(`input[type="text]`)
   - psuedo(`p:first-child`)
+
+    #### what do these return?
+    - `document.getElementsByTagName` --> HTMLCollection
+    - `document.querySelectorAll` --> NodeList
+    - both are array like objects (you can call forEach on a node list, but not on HTMLCollections - for those you need to call Array.from on it)
+
+## 10. how would you implement `getElementsByAttribute`?
+
+  - 

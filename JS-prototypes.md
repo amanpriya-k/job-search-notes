@@ -44,3 +44,6 @@ function Rabbit() {}
 Rabbit.prototype = { constructor: Rabbit };
 */
 ```
+
+
+https://javascript.info/function-prototype

@@ -16,3 +16,4 @@ This constraint ensures that there is a common language between servers and clie
   - **manipulation of resources through representations:** this means the client manipulates resources through sending representations of the object to the server, like JSON objects containing the content to be modified.
   - **self descriptive messages:** an example of this is server responses like the 200-500 codes and messages. 
   - **hypermedia:** this word means data send from the server to the client that contains information about what the client can do next, like what further requests it can make. 
+  

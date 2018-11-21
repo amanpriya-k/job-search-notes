@@ -17,3 +17,9 @@ This constraint ensures that there is a common language between servers and clie
   - **self descriptive messages:** an example of this is server responses like the 200-500 codes and messages. 
   - **hypermedia:** this word means data send from the server to the client that contains information about what the client can do next, like what further requests it can make. 
   
+
+  ## Summary:
+
+REST is the underlying architectural principle of the web. The amazing thing about the web is the fact that clients (browsers) and servers can interact in complex ways without the client knowing anything beforehand about the server and the resources it hosts. The key constraint is that the server and client must both agree on the media used, which in the case of the web is HTML.
+
+An API that adheres to the principles of REST does not require the client to know anything about the structure of the API. Rather, the server needs to provide whatever information the client needs to interact with the service. An HTML form is an example of this: The server specifies the location of the resource and the required fields. The browser doesn't know in advance where to submit the information, and it doesn't know in advance what information to submit. Both forms of information are entirely supplied by the server. (This principle is called HATEOAS: Hypermedia As The Engine Of Application State.)

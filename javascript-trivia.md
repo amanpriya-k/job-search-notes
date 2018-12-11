@@ -151,3 +151,24 @@
 
   - put a listener on the whole body
 
+# KEY CONCEPTS
+
+1. *Closure:* A closure is an inner function that has access to variables in an outer or enclosing function. This allows it access to variables in its own scope, the outer scope, and global variables. “[T]he inner function cannot call the outer function’s arguments object, however, even though it can call the outer function’s parameters directly.” Closures: have access to the outer functions variables even after it returns, store references to the outer functions variable, not the value itself, can get wonky when you use them with for loops (they can also be great, just proceed with caution!) so you can usually work around this with an IIFE (immediately invoked functional expression). — Toptal
+
+2. *IIFE:* Imediately invoked functional expressions are functions that are called right after they are defined. It is made of two parts, the first function, which is an anonymous function with the lexical scope enclosed, and an executing function expression — the ‘()’ — which calls the function.
+
+3. *this:* The ‘this’ keyword is a pronoun which references the current object of a function, and includes the value of the object. It is a way to refer to the object in its context. It always refers to a singular object (with its value) and is a way to access the properties and methods of an object that invoke a particular function. In strict mode, this holds the value undefined in the global context and in anonymous functions not bound to an object.— JavaScriptIsSexy
+
+4. ‘*use strict’:* Strict mode is a voluntary way of enforcing more stringent error handling and parsing. By generating errors in code that may have otherwise failed silently, you can catch bugs earlier on. It also prevents accidental global variables, prevents duplicately named parameter when defining a function, and throws an error when referencing a this value of null or undefined (among other things). — Toptal
+
+5. *Hoisting:* JavaScript moves variables to the top of their scope before executing code. This can cause errors if you have not properly declared your variables. The order of priority while hoisting is: Variable assignment, Function declaration, Variable declarations. Variables and functions should be declared at the top of the scope to avoid bugs. — 10 JavaScript Concepts
+
+6. *Prototypes, classical vs. prototypical inheritance:* JavaScript is not a class based language, but rather uses prototypical inheritance. Class-based languages, like ruby, use a class as a blueprint, a description of the object that will later be created. JavaScript, although it does have some class syntax, does not actually do this. A JavaScript class is really just a function. In prototypical inheritance, a prototype is a working object instance.
+
+7. *== vs. === :* Use triple equals! Why? The == operate first does any necessary type conversions, and then compares for equality. This can go awry and give unexpected results, especially when comparing things like false/null/undefined. The === operator doesn’t do type conversions, and the values must be the same type to return true. — Stack Overflow
+
+8. *Pass by value vs. pass by reference:* JavaScript has two categories of data types: primitives (which include Number, Boolean, null, undefined, and String) and objects (arrays, functions, and objects ). Primitives are pass-by-value. This means that the value of variables are independent of one another and are stored separately in memory. For objects/pass-by-reference, the variable does not store the value, but rather, retains a reference that points to this value in memory. — Educative
+
+9. *Pure functions:* Pure functions return the same output when passed the same input as an argument and has no side effects. Pure functions are the basis of functional programming and are independent of outside state, so using pure functions whenever possible means you can often avoid state-related bugs. — Eric Elliot
+
+10. *Promises:* “A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending.” — Eric Elliot.

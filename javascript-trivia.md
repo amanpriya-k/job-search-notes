@@ -172,3 +172,10 @@
 9. *Pure functions:* Pure functions return the same output when passed the same input as an argument and has no side effects. Pure functions are the basis of functional programming and are independent of outside state, so using pure functions whenever possible means you can often avoid state-related bugs. — Eric Elliot
 
 10. *Promises:* “A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending.” — Eric Elliot.
+
+Key concepts:
+
+OOP in JS,
+Closures,
+Inheritance,
+Function declarations

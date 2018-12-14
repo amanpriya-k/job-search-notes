@@ -16,3 +16,12 @@ Methods are invoked by sending a message to an object. The message contains the 
 It’s worth noting here a major difference between Ruby and most other languages. For example, Java, you’d find the absolute value of some number by calling a separate function and passing in that number, like:
 
 num = Math.abs(num) 
+
+# scripting
+
+Ruby is sometimes called a scripting language. The term "scripting language" is often bandied about, but I have never seen or heard anybody describe a precise technical distinction between scripting languages and other languages. (Indeed, Dave Thomas and Andy Hunt, authors of the first major English-language Ruby textbook, seem to agree that it's not a very useful term.)
+
+The thing that seems to lead people to call a language a "scripting language" is the environment in which the major implementation(s) of that language run. Generally, a "scripting language" is one that
+
+runs inside some larger domain-specific environment
+contains convenient standard library objects/functions for interacting with features of that environment
